@@ -9,9 +9,13 @@
         "strict": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitReturns": true,
-        "noEmitOnError": true
+        "noImplicitAny": false,
+        "noEmit": false,
+        "noEmitOnError": false,
+        "esModuleInterop": true,
     },
     "exclude": [
         "node_modules"
-    ]
+    ],
 }
+
