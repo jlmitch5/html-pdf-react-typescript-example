@@ -17,7 +17,8 @@
     "express": "^4.17.1",
     "html-pdf": "^3.0.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
@@ -30,6 +31,7 @@
     "tape": "^5.2.2",
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.2",
+    "typescript-plugin-styled-components": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-node-externals": "^3.0.0"

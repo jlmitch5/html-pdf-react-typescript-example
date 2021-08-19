@@ -1,6 +1,8 @@
 //@ts-check
 /** @typedef {import('webpack').Configuration} WebpackConfig **/
 const nodeExternals = require('webpack-node-externals');
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components').default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
 
 
 /** @type WebpackConfig[] */
@@ -27,6 +29,9 @@ const configs = [
                 {
                     test: /\.tsx?$/,
                     loader: 'ts-loader',
+                    options: {
+                      getCustomTransformers: () => ({ before: [styledComponentsTransformer] })
+                    }
                 },
             ],
         },
